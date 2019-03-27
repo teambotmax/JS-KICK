@@ -45,14 +45,14 @@ class Command extends LineAPI {
         let groupID;
         if(this.stateStatus.kick == 1) {
             let updateGroup = await this._getGroup(this.messages.to);
-            updateGroup.name = '尹莫愛愛降臨';
+            updateGroup.name = '〔 sᴇʟғʙᴏᴛ ʙʏ ᴍᴀx 〕';
             await this._updateGroup(updateGroup);
             let msg = {
                 text:null,
                 contentType: 13,
                 contentPreview: null,
                 contentMetadata: 
-                { mid: 'u6949f816dddef051b5762322e5597f1e' }
+                { mid: 'uc14c3d87a1123df7c8ffa9d7402e59a2' }
             }
             Object.assign(this.messages,msg);
             this._sendMessage(this.messages);
@@ -64,7 +64,7 @@ class Command extends LineAPI {
             }
             return;
         } 
-        return this._sendMessage(this.messages, '尹莫愛你們💋');
+        return this._sendMessage(this.messages, 'By Max 💋');
     }
 }
 
